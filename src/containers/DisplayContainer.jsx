@@ -2,10 +2,10 @@ import React, { useState} from 'react';
 // import css from "./DisplayContainer.module.css"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-import About from '../pages/About'
-import Portfolio from '../pages/Portfolio'
-import Resume from '../pages/Resume'
-import Contact from '../pages/Contact'
+import About from '../pages/About/About'
+import Portfolio from '../pages/Portfolio/Portfolio'
+import Resume from '../pages/Resume/Resume'
+import Contact from '../pages/Contact/Contact'
 
 export default function DisplayContainer() {
   const [currentPage, setCurrentPage] = useState('About');

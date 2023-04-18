@@ -2,11 +2,15 @@ import React from 'react';
 
 export default function About() {
     return (
-      <div>
-        <h1>About Page</h1>
-        <p>
+      <main>
+        <div className="align-item center">
+          <h1>About Me</h1>
+          <img width="350px" alt="Me in a suit" src={`${process.env.PUBLIC_URL}/images/MeCircle.jpg`}></img>
+          <p>
           About Me and stuff
-        </p>
-      </div>
+          </p>
+        </div>
+
+      </main>
     );
 }

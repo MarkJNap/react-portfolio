@@ -1,23 +1,37 @@
-import React from 'react';
+import React from "react";
+import css from "./Navigation.module.css"
 
 export default function Navigation({ currentPage, handlePageChange }) {
-    // console.log("Navigation. " + currentPage + ". " + handlePageChange);
-    return (
-    <nav>
-        <ul>
-            <li><a href="#about" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
-                About
-            </a></li>
-            <li><a href="#contact" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
-                Contact
-            </a></li>
-            <li><a href="#resume" onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
-                Resume
-            </a></li>
-            <li><a href="#portfolio" onClick={() => handlePageChange('Portfolio')} className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
-                Portfolio
-            </a></li>
+  // console.log("Navigation. " + currentPage + ". " + handlePageChange);
+  return (
+    <nav className={css.headerbg}>
+      <div className="nav-wrapper">
+        <a href="#about" className={`${css.headertitle} brand-logo left`}  onClick={() => handlePageChange("About")}>
+          MarkJNap
+        </a>
+        <ul className="right">
+          <li className={currentPage === "About" ? `${css.customactive}` : ""}>
+            <a href="#about" onClick={() => handlePageChange("About")}>
+              About
+            </a>
+          </li>
+          <li className={currentPage === "Contact" ? `${css.customactive}` : ""}>
+            <a href="#contact" onClick={() => handlePageChange("Contact")}>
+              Contact
+            </a>
+          </li>
+          <li className={currentPage === "Resume" ? `${css.customactive}` : ""}>
+            <a href="#resume" onClick={() => handlePageChange("Resume")}>
+              Resume
+            </a>
+          </li>
+          <li className={currentPage === "Portfolio" ? `${css.customactive}` : ""}>
+            <a href="#portfolio" onClick={() => handlePageChange("Portfolio")}>
+              Portfolio
+            </a>
+          </li>
         </ul>
+      </div>
     </nav>
-    )
+  );
 }
