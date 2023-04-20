@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './Resume.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileArrowDown} from '@fortawesome/free-solid-svg-icons'
 
@@ -58,13 +59,13 @@ export default function Resume() {
       <main>
         <div className="align-item center">
           <h1>Resume</h1>
-          <a className="btn" href={`${process.env.PUBLIC_URL}/assets/files/Mark_Resume.pdf`} download><FontAwesomeIcon icon={faFileArrowDown} size='xl' /> Download my Resume</a>
+          <a className={` ${css.resumeBtn}`} href={`${process.env.PUBLIC_URL}/assets/files/Mark_Resume.pdf`} download><FontAwesomeIcon icon={faFileArrowDown} size='xl' /> Download my Resume</a>
           <h2>Skills</h2>
           <div className='container row'>
             <ul className='col s12 align-item center'>
               {skills.map((skill) => {
                 return (
-                <li className="col s12 m4" key={skill.id}>{skill.name}</li>
+                <li className={`col s12 m4 ${css.liText}`} key={skill.id}>{skill.name}</li>
                 )
               })}
             </ul>

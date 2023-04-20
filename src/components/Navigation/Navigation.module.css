@@ -15,6 +15,6 @@
     background: #C106C3;
 }
 
-li:hover {
+.customLi:hover {
     background: #57086C;
 }
