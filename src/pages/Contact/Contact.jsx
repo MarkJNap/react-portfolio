@@ -68,7 +68,7 @@ export default function Contact() {
       <main className='container align-item center s12'>
         <h1>Contact Me</h1>
         <div className="">
-          <form className="container black contact-form" onSubmit={handleSubmit}>
+          <form className="container contact-form" onSubmit={handleSubmit}>
             <div className="">
               <div className="">
                 <label className="align-text left" htmlFor="name">Name:</label>

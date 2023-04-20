@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-// import css from "./DisplayContainer.module.css"
+import css from "./DisplayContainer.module.css"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import About from '../pages/About/About'

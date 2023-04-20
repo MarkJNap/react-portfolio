@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +8,11 @@
 }
 
 body {
-  background-color: #282c34;
+  background: rgb(41,2,68);
+  background: linear-gradient(90deg, rgba(41,2,68,1) 0%, rgba(193,6,195,1) 35%, rgba(39,77,151,1) 100%);
   color: white;
+}
+
+h1, h2 {
+  text-shadow: #050333 1px 1px 2px;
 }

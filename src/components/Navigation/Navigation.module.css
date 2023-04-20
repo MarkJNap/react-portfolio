@@ -6,6 +6,15 @@
     padding-left: 40px !important
 }
 
+.headertitle:hover {
+    color: #C106C3;
+    transition: 0.3s;
+}
+
 .customactive {
+    background: #C106C3;
+}
+
+li:hover {
     background: #57086C;
 }
