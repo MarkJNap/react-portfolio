@@ -7,6 +7,9 @@ export default function Resume() {
         <p>
           A pdf of my resume
         </p>
+        <p>
+        list of my proficiencies
+        </p>
       </main>
     );
 }
